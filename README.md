@@ -11,3 +11,7 @@ Install package with ...
 ## neuer Abschnitt
 
 test
+
+## Fazit
+
+Das ist ein Fazit.
