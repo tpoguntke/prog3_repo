@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_602e50c45d3f5e7d99847761e70078eb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_602e50c45d3f5e7d99847761e70078eb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_602e50c45d3f5e7d99847761e70078eb = L.map(
+                "map_602e50c45d3f5e7d99847761e70078eb",
+                {
+                    center: [47.72167778891493, 10.313657870248395],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_25036ee290c8e7f9d842f0d63f14af20 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_25036ee290c8e7f9d842f0d63f14af20.addTo(map_602e50c45d3f5e7d99847761e70078eb);
+        
+    
+            var marker_9241c8950377f8674592472c8cea7301 = L.marker(
+                [47.71608, 10.313525],
+                {
+}
+            ).addTo(map_602e50c45d3f5e7d99847761e70078eb);
+        
+    
+        var popup_a78b0067018dc44d2726c3d7bb277414 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e97287eafd92b4d209b165b3680293a1 = $(`<div id="html_e97287eafd92b4d209b165b3680293a1" style="width: 100.0%; height: 100.0%;">Hochschule Kreisel</div>`)[0];
+                popup_a78b0067018dc44d2726c3d7bb277414.setContent(html_e97287eafd92b4d209b165b3680293a1);
+            
+        
+
+        marker_9241c8950377f8674592472c8cea7301.bindPopup(popup_a78b0067018dc44d2726c3d7bb277414)
+        ;
+
+        
+    
+    
+            var marker_0fd1f449bf51d8e55f32f2d46bbc4598 = L.marker(
+                [47.728723272725006, 10.312297325822115],
+                {
+}
+            ).addTo(map_602e50c45d3f5e7d99847761e70078eb);
+        
+    
+        var popup_e7603dcbae72bf93d3e09dbca77ba65c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6405b62670556c4dee04feb94c47414 = $(`<div id="html_a6405b62670556c4dee04feb94c47414" style="width: 100.0%; height: 100.0%;">Residenz</div>`)[0];
+                popup_e7603dcbae72bf93d3e09dbca77ba65c.setContent(html_a6405b62670556c4dee04feb94c47414);
+            
+        
+
+        marker_0fd1f449bf51d8e55f32f2d46bbc4598.bindPopup(popup_e7603dcbae72bf93d3e09dbca77ba65c)
+        ;
+
+        
+    
+    
+        function geo_json_16095b3fcef61e40b8e988eb0f1f6106_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "blue", "opacity": 0.5, "weight": 4};
+            }
+        }
+
+        function geo_json_16095b3fcef61e40b8e988eb0f1f6106_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_16095b3fcef61e40b8e988eb0f1f6106 = L.geoJson(null, {
+                onEachFeature: geo_json_16095b3fcef61e40b8e988eb0f1f6106_onEachFeature,
+            
+                style: geo_json_16095b3fcef61e40b8e988eb0f1f6106_styler,
+            ...{
+}
+        });
+
+        function geo_json_16095b3fcef61e40b8e988eb0f1f6106_add (data) {
+            geo_json_16095b3fcef61e40b8e988eb0f1f6106
+                .addData(data);
+        }
+            geo_json_16095b3fcef61e40b8e988eb0f1f6106_add({"bbox": [10.310073, 47.716061, 10.314225, 47.729423], "features": [{"bbox": [10.310073, 47.716061, 10.314225, 47.729423], "geometry": {"coordinates": [[10.313524, 47.716079], [10.313584, 47.716061], [10.313646, 47.716074], [10.313688, 47.716119], [10.313686, 47.716155], [10.313647, 47.716191], [10.313767, 47.716261], [10.313847, 47.716284], [10.314225, 47.716368], [10.314014, 47.716482], [10.313149, 47.716469], [10.312747, 47.716501], [10.312576, 47.716579], [10.312544, 47.716783], [10.312421, 47.716899], [10.312436, 47.716909], [10.31218, 47.716928], [10.311998, 47.717012], [10.311908, 47.717326], [10.311801, 47.717899], [10.311699, 47.719037], [10.311593, 47.719991], [10.311588, 47.720016], [10.311459, 47.720427], [10.311355, 47.720713], [10.311285, 47.720913], [10.31125, 47.721017], [10.311219, 47.721237], [10.311204, 47.721335], [10.311157, 47.721615], [10.311139, 47.721773], [10.311091, 47.722196], [10.311089, 47.722244], [10.311127, 47.722391], [10.311204, 47.722511], [10.311323, 47.722584], [10.311302, 47.722675], [10.311257, 47.722888], [10.311249, 47.722932], [10.311109, 47.723623], [10.311068, 47.723931], [10.311035, 47.724139], [10.310996, 47.724352], [10.310927, 47.724854], [10.310824, 47.725334], [10.310601, 47.726263], [10.3105, 47.726575], [10.310451, 47.726761], [10.310424, 47.726869], [10.310371, 47.727077], [10.310299, 47.727376], [10.310233, 47.727614], [10.310073, 47.728162], [10.310082, 47.728424], [10.310149, 47.729216], [10.310253, 47.729361], [10.31036, 47.729423], [10.310617, 47.729357], [10.311249, 47.729363], [10.31236, 47.729361], [10.312357, 47.729201]], "type": "LineString"}, "id": "0", "properties": {"segments": [{"distance": 1851.7, "duration": 315.3, "steps": [{"distance": 24.6, "duration": 5.9, "instruction": "Head southeast on Bahnhofstra\u00dfe", "name": "Bahnhofstra\u00dfe", "type": 11, "way_points": [0, 5]}, {"distance": 48.2, "duration": 6.9, "instruction": "Turn right onto Bahnhofstra\u00dfe", "name": "Bahnhofstra\u00dfe", "type": 1, "way_points": [5, 8]}, {"distance": 169.4, "duration": 61.0, "instruction": "Turn sharp left onto Fischer\u00f6sch", "name": "Fischer\u00f6sch", "type": 2, "way_points": [8, 14]}, {"distance": 1.6, "duration": 0.2, "instruction": "Turn right onto Haslacher Stra\u00dfe", "name": "Haslacher Stra\u00dfe", "type": 1, "way_points": [14, 15]}, {"distance": 35.8, "duration": 5.2, "instruction": "Turn sharp left onto Haslacher Stra\u00dfe", "name": "Haslacher Stra\u00dfe", "type": 2, "way_points": [15, 17]}, {"distance": 630.0, "duration": 88.0, "instruction": "Turn slight right onto Immenst\u00e4dter Stra\u00dfe, B 19", "name": "Immenst\u00e4dter Stra\u00dfe, B 19", "type": 5, "way_points": [17, 35]}, {"distance": 773.4, "duration": 109.6, "instruction": "Turn left onto Mozartstra\u00dfe, B 19", "name": "Mozartstra\u00dfe, B 19", "type": 0, "way_points": [35, 56]}, {"distance": 150.9, "duration": 34.2, "instruction": "Turn right onto Landwehrstra\u00dfe", "name": "Landwehrstra\u00dfe", "type": 1, "way_points": [56, 59]}, {"distance": 17.8, "duration": 4.3, "instruction": "Turn right onto Herrenstra\u00dfe", "name": "Herrenstra\u00dfe", "type": 1, "way_points": [59, 60]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at Herrenstra\u00dfe, on the right", "name": "-", "type": 10, "way_points": [60, 60]}]}], "summary": {"distance": 1851.7, "duration": 315.3}, "way_points": [0, 60]}, "type": "Feature"}], "metadata": {"attribution": "openrouteservice.org | OpenStreetMap contributors", "engine": {"build_date": "2025-10-31T12:33:09Z", "graph_date": "2025-11-23T11:22:24Z", "osm_date": "2025-11-17T01:00:01Z", "version": "9.5.0"}, "query": {"coordinates": [[10.313525, 47.71608], [10.312297325822115, 47.728723272725006]], "format": "geojson", "geometry": true, "preference": "shortest", "profile": "driving-car", "profileName": "driving-car"}, "service": "routing", "timestamp": 1764249894790}, "type": "FeatureCollection"});
+
+        
+    
+            geo_json_16095b3fcef61e40b8e988eb0f1f6106.addTo(map_602e50c45d3f5e7d99847761e70078eb);
+        
+</script>
+</html>
