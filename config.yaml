@@ -1,0 +1,20 @@
+api_key: '5b3ce3597851110001cf6248ceb027611ac04ba796da742ff02ea8d1'
+map_center: [47.72167778891493, 10.313657870248395]
+zoom_start: 15
+open: True
+output: "index.html"
+markers:
+  - lat: 47.728723272725006
+    lon: 10.312297325822115
+    popup: "Kempten Zentrum"
+  - lat: 47.716080
+    lon: 10.313525
+    popup: "Hochschule Kreisel"
+route:
+  coordinates:
+    - [10.313525, 47.716080]
+    - [10.312297325822115, 47.728723272725006]
+  profile: "foot-walking"
+  preference: "fastest"
+  geometry: True
+  format_out: "geojson"
